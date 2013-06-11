@@ -4,14 +4,14 @@ source 'https://rubygems.org'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'rails', '3.2.13'
 
-
-# Dababase dependecncie
+##### Database Dependencies
 group :production do
-  # We'll deploy at Heroku. Heroku only supports postgresql.
-  gem 'pg'
+  gem 'mysql2'
 end
+
 group :development, :test do
-  # SQLite3 syntax 'CREATE TEMPORARY TABLE ~~' dosent work on cygwin.
+  # sqlite3 syntax 'CREATE TEMPORARY TABLE ~~' dosent work on cygwin environment.
+  # So I use MySQL, instead of sqlite3.
   # In RoR this syntax used by change_column method in migration script.
   if RUBY_PLATFORM =~ /cygwin/
     gem 'mysql2'
@@ -20,6 +20,7 @@ group :development, :test do
   end
 end
 
+##### UI Dependencies
 gem 'jquery-rails'
 
 gem 'haml-rails'
@@ -29,6 +30,8 @@ gem 'twitter-bootstrap-rails'
 
 gem 'jquery-ui-rails'
 
+
+##### Testing Dependencies
 # 'rspec-rails' must written in root context to generated specs while executing rails command.
 gem 'rspec-rails'
 
@@ -43,7 +46,6 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-# gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
