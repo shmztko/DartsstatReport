@@ -1,0 +1,9 @@
+%h1 Users#show
+%table
+  - @user.records.each do |r|
+    - r.statistics.each do |s|    
+      %tr
+        %td= r.played_at
+        %td= s.game_name
+        %td= s.score
+
