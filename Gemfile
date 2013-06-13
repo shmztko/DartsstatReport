@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'rails', '3.2.13'
 
+##### Authentication Dependencies
+gem 'devise'
+
 ##### Database Dependencies
 group :production do
   gem 'mysql2'

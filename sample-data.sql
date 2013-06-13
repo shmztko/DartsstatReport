@@ -51,7 +51,8 @@ UNLOCK TABLES;
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'st0098@gmail.com','たけを＠紫推し','http://card.dartslive.com/t/top.jsp?i=559300205543375&n=2124119876','2013-01-07 15:09:14','2013-05-31 10:00:05');
+INSERT INTO `users` VALUES (1,'たけを＠紫推し','http://card.dartslive.com/t/top.jsp?i=559300205543375&n=2124119876','st0098@gmail.com','$2a$10$iVvdmOiW4vEDjYgPAN1z7.Zj3Blhw9rXpoiv.eok.Yx.Drcs62woq',NULL,NULL,NULL,1,'2013-06-13 07:43:01','2013-06-13 07:43:01','127.0.0.1','127.0.0.1','2013-06-13 07:43:01','2013-06-13 07:43:01');
+
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

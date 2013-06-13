@@ -1,4 +1,8 @@
 DartsstatReport::Application.routes.draw do
+  root :to => "users#show"
+
+  devise_for :users
+
   get "users/show"
 
   resources :samples
