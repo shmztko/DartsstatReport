@@ -27,6 +27,7 @@ end
 gem 'jquery-rails'
 
 gem 'haml-rails'
+gem 'erb2haml'
 
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
