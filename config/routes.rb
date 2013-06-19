@@ -1,4 +1,6 @@
 DartsstatReport::Application.routes.draw do
+  get "stats/index"
+
   get "sitemap/show"
 
   root :to => "users#show"
