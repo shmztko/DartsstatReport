@@ -3,7 +3,7 @@ DartsstatReport::Application.routes.draw do
 
   get "sitemap/show"
 
-  root :to => "users#show"
+  root :to => "stats#index"
 
   devise_for :users
 

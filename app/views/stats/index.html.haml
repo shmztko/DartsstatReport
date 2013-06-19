@@ -1,2 +1,4 @@
 %h1 Stats#index
-%p Find me in app/views/stats/index.html.haml
+%ul
+- @played_dates.each do |date|
+  %li= date

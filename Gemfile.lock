@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/takewo/therubyracer_windows.git
-  revision: ab166fe4efa6f1d054bdb5c2def7947bf3a912a0
-  specs:
-    therubyracer (0.11.0beta1)
-      ref
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -92,6 +85,7 @@ GEM
     less-rails (2.3.3)
       actionpack (>= 3.1)
       less (~> 2.3.1)
+    libv8 (3.11.8.17)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -151,6 +145,9 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    therubyracer (0.11.4)
+      libv8 (~> 3.11.8.12)
+      ref
     thor (0.18.1)
     tilt (1.4.1)
     treetop (1.4.14)
@@ -186,6 +183,6 @@ DEPENDENCIES
   rspec-rails
   simplecov
   simplecov-rcov
-  therubyracer!
+  therubyracer
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
