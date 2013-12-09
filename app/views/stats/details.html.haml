@@ -1,0 +1,6 @@
+%h1 Stats#details
+%table
+  - @stats_by_date.each do |s|
+    %tr
+      %td= s.game_name
+      %td= s.score

@@ -2,7 +2,7 @@ class CreateRecords < ActiveRecord::Migration
   def change
     create_table :records do |t|
       t.references :user
-      t.timestamp :played_at
+      t.date :played_at
 
       t.timestamps
     end

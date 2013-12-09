@@ -1,4 +1,6 @@
 DartsstatReport::Application.routes.draw do
+
+  get "stats/details/:year/:month/:date", :controller => "stats", :action => "details"
   get "stats/index"
 
   get "sitemap/show"

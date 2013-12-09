@@ -18,4 +18,7 @@ class User < ActiveRecord::Base
     records.map {|r| r.played_at}
   end
 
+  def record_by_date(date)
+      Record.where('user_id = ? AND played_at = ?', id, date).first
+  end
 end
