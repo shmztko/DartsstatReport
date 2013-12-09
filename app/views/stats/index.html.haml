@@ -1,0 +1,6 @@
+%h1 Stats#index
+%table.table
+  - @played_dates.each do |date|
+    %tr
+    %td
+      = link_to date, controller: "stats", action: "details", year: date.year, month: date.month, date: date.day

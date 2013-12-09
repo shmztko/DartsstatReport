@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(:version => 20130613070307) do
 
   create_table "records", :force => true do |t|
     t.integer  "user_id"
-    t.datetime "played_at"
+    t.date     "played_at"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

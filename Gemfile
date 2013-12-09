@@ -15,12 +15,8 @@ end
 group :development, :test do
   # sqlite3 syntax 'CREATE TEMPORARY TABLE ~~' dosent work on cygwin environment.
   # So I use MySQL, instead of sqlite3.
-  # In RoR this syntax used by change_column method in migration script.
-  if RUBY_PLATFORM =~ /cygwin/
-    gem 'mysql2'
-  else
-    gem 'sqlite3'
-  end
+  # In rails this syntax used by change_column method in migration script.
+  gem 'mysql2'
 end
 
 ##### UI Dependencies
