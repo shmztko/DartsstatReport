@@ -1,11 +1,11 @@
 DartsstatReport::Application.routes.draw do
 
-  get "stats/details/:year/:month/:date", :controller => "stats", :action => "details"
+  get "stats/details/:year/:month/:date", controller: "stats", action: "details"
   get "stats/index"
 
   get "sitemap/show"
 
-  root :to => "stats#index"
+  root to: "stats#index"
 
   devise_for :users
 

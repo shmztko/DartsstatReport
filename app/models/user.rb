@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  has_many :records
+  has_many :records, order: 'played_at DESC'
 
   attr_accessible :card_name, :login_url
 
